@@ -2,15 +2,18 @@
 @import "_variables";
 
 
-html {
+:root {
   box-sizing: border-box;
-}
-
-*, *:before, *:after {
-  box-sizing: inherit;
+  font-size: 1 em;
 }
 
 body {
-  color: $yellow;
-  background: $violet;
+  color: $aurometalsaurus;
+  background: $gainsboro;
+}
+
+.my-project{
+  &__list{
+
+  }
 }
