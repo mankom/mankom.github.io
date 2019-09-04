@@ -1,1 +1,0 @@
-# mankom.github.io
