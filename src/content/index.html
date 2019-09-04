@@ -1,47 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="CV Marek Mańko" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="CV Marek Mańko" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <section class="me">
-      <h1 class="me__title">
-        Hi! My name is Marek and I'm an aspiring Frontend developer and a boardgames fan.
-      </h1>
-      <p class="me__text">
-        You might be interested in checking the list of <a class="me__link" href="#">my skills</a>. Don’t forget to  have a glimpse at <a class="me__link" href="#">my projects</a>. Currently I’m looking for a new challenges so if you have one - <a class="me__link" href="#">contact me</a> 😊
-      </p>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <section class="me">
+    <h1 class="me__title">
+      Hi! My name is Marek and I'm an aspiring Frontend developer and a boardgames fan.
+    </h1>
+    <p class="me__text">
+      You might be interested in checking the list of <a class="me__link" href="#my-skills">my skills</a>. Don’t forget
+      to have a glimpse at <a class="me__link" href="#">my projects</a>. Currently I’m looking for a new challenges so
+      if you have one - <a class="me__link" href="#">contact me</a> 😊
+    </p>
+  </section>
+
+  <section id="my-skills" class="skills">
+    <h2 class="skills__title">
+      My skills
+    </h2>
+
+    <section class="skill-list">
+      <h3 class="skill-list__title">
+        Working knowledge
+      </h3>
+      <ul class="skill-list__items">
+        <li class="skill-list__item">Semantic HTML5</li>
+        <li class="skill-list__item">Flexbox</li>
+        <li class="skill-list__item">Markdown</li>
+        <li class="skill-list__item">JS: Local storage</li>
+        <li class="skill-list__item">Figma</li>
+        <li class="skill-list__item">CSS grid</li>
+        <li class="skill-list__item">Forms</li>
+        <li class="skill-list__item">JS: DOM manipulations</li>
+        <li class="skill-list__item">SASS</li>
+      </ul>
     </section>
 
-    <script src="js/main.js"></script>
-  </body>
+    <section class="skill-list">
+      <h3 class="skill-list__title">
+        Know something about
+      </h3>
+      <ul class="skill-list__items">
+        <li class="skill-list__item">JavaScript ES6+ features</li>
+        <li class="skill-list__item">CSS animations</li>
+        <li class="skill-list__item">Working with API</li>
+        <li class="skill-list__item">NPM Scripts</li>
+        <li class="skill-list__item">Progressive web apps</li>
+        <li class="skill-list__item">Git</li>
+        <li class="skill-list__item">Accessibility</li>
+    </section>
+
+    <section class="skill-list">
+      <h3 class="skill-list__title">
+        Want to learn
+      </h3>
+      <ul class="skill-list__items">
+        <li class="skill-list__item">React JS</li>
+        <li class="skill-list__item">Node.JS</li>
+        <li class="skill-list__item">Electron</li>
+        <li class="skill-list__item">Server side rendering</li>
+        <li class="skill-list__item">Gatsby</li>
+        <li class="skill-list__item">Websockets</li>
+      </ul>
+    </section>
+  </section>
+  
+  <script src="js/main.js"></script>
+</body>
+
 </html>
