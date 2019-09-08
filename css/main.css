@@ -307,16 +307,36 @@ template {
 [hidden] {
   display: none; }
 
-html {
+:root {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box; }
-
-*, *:before, *:after {
-  -webkit-box-sizing: inherit;
-          box-sizing: inherit; }
+          box-sizing: border-box;
+  font-size: 1 em; }
 
 body {
-  color: #F9C802;
-  background: #000; }
+  color: #637081;
+  background: #D7DCEA; }
+
+.my-projects__item {
+  background: #637081;
+  border-radius: .5em;
+  -webkit-box-shadow: 0.15em 0.15em rgba(0, 0, 0, 0.7);
+          box-shadow: 0.15em 0.15em rgba(0, 0, 0, 0.7);
+  display: block;
+  color: #B0B5C0;
+  padding: .5em; }
+
+.my-projects__link {
+  color: #C4C8D5;
+  text-decoration: none; }
+
+.my-projects__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5em;
+  list-style-type: none;
+  margin: 0;
+  padding: 0 0.5em; }
 
 /*# sourceMappingURL=main.css.map */

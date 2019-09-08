@@ -1,40 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Site title</title>
-    <meta name="description" content="Description" />
 
-    <!-- Title -->
-    <meta property="og:title" content="" />
-    <!-- OPTIONAL description. 2-4 sentences. -->
-    <meta property="og:description" content="" />
-    <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
-    <meta property="og:url" content="" />
-    <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
-    <meta property="og:image" content="https://maciejkorsan.com/wtf-gulp-starter/assets/img/cover.png" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Site title</title>
+  <meta name="description" content="Description" />
 
-    <link rel="manifest" href="manifest.json" />
-    <meta name="apple-mobile-web-app-capable" content="yes" />
-    <link
-      rel="apple-touch-icon"
-      sizes="192x192"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <!-- Title -->
+  <meta property="og:title" content="CV Marek Mańko" />
+  <!-- OPTIONAL description. 2-4 sentences. -->
+  <meta property="og:description" content="" />
+  <!-- full url with http(s) ie. https://maciejkorsan.github.io/my-repo/ -->
+  <meta property="og:url" content="" />
+  <!-- full url to the image with http(s) ie. https://maciejkorsan.github.io/my-repo/assets/img/fb.png. Facebook suggests at least 1200 x 630. -->
+  <meta property="og:image" content="" />
 
-    <link
-      rel="icon"
-      type="image/png"
-      href="assets/pwa/icons/icon-192x192.png"
-    />
+  <link rel="manifest" href="manifest.json" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/pwa/icons/icon-192x192.png" />
 
-    <link rel="stylesheet" href="css/main.css" />
-  </head>
-  <body>
-    <h1>Hello world - with simple PWA support!</h1>
+  <link rel="icon" type="image/png" href="assets/pwa/icons/icon-192x192.png" />
 
-    <script src="js/main.js"></script>
-  </body>
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+  <section class="me">
+    <h1 class="me__title">
+      Hi! My name is Marek and I'm an aspiring Frontend developer and a boardgames fan.
+    </h1>
+    <p class="me__text">
+      You might be interested in checking the list of <a class="me__link" href="#my-skills">my skills</a>. Don’t forget
+      to have a glimpse at <a class="me__link" href="#my-projects">my projects</a>. Currently I’m looking for a new challenges so
+      if you have one - <a class="me__link" href="#contact">contact me</a> 😊
+    </p>
+  </section>
+
+  <section id="my-skills" class="my-skills">
+    <h2 class="my-skills__title">
+      My skills
+    </h2>
+
+    <section class="skill-list">
+      <h3 class="skill-list__title">
+        Working knowledge
+      </h3>
+      <ul class="skill-list__items">
+        <li class="skill-list__item">Semantic HTML5</li>
+        <li class="skill-list__item">Flexbox</li>
+        <li class="skill-list__item">Markdown</li>
+        <li class="skill-list__item">JS: Local storage</li>
+        <li class="skill-list__item">Figma</li>
+        <li class="skill-list__item">CSS grid</li>
+        <li class="skill-list__item">Forms</li>
+        <li class="skill-list__item">JS: DOM manipulations</li>
+        <li class="skill-list__item">SASS</li>
+      </ul>
+    </section>
+
+    <section class="skill-list">
+      <h3 class="skill-list__title">
+        Know something about
+      </h3>
+      <ul class="skill-list__items">
+        <li class="skill-list__item">JavaScript ES6+ features</li>
+        <li class="skill-list__item">CSS animations</li>
+        <li class="skill-list__item">Working with API</li>
+        <li class="skill-list__item">NPM Scripts</li>
+        <li class="skill-list__item">Progressive web apps</li>
+        <li class="skill-list__item">Git</li>
+        <li class="skill-list__item">Accessibility</li>
+    </section>
+
+    <section class="skill-list">
+      <h3 class="skill-list__title">
+        Want to learn
+      </h3>
+      <ul class="skill-list__items">
+        <li class="skill-list__item">React JS</li>
+        <li class="skill-list__item">Node.JS</li>
+        <li class="skill-list__item">Electron</li>
+        <li class="skill-list__item">Server side rendering</li>
+        <li class="skill-list__item">Gatsby</li>
+        <li class="skill-list__item">Websockets</li>
+      </ul>
+    </section>
+  </section>
+
+  <section id="my-projects" class="my-projects">
+    <h2 class="my-projects__title">
+      Recent projects
+    </h2>
+    <p class="my-projects__text">
+      I started my frontend developer path in 2019. Since then, I've built same projects. Here's the list of the things I've done so far.
+    </p>
+    <ul class="my-projects__list my-projects__list--js">
+
+    </ul>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2 class="contact__title">
+      Contact me
+    </h2>
+    <p class="contact__text">
+        I’m open for new opportunities. If you have one for me we should talk!
+    </p>
+    <div class="contact__social-media">
+        <a class="contact__facebook" href="https://www.facebook.com/marek.manko.78"><svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="m75 512h167v-182h-60v-60h60v-75c0-41.355469 33.644531-75 75-75h75v60h-60c-16.542969 0-30 13.457031-30 30v60h87.292969l-10 60h-77.292969v182h135c41.355469 0 75-33.644531 75-75v-362c0-41.355469-33.644531-75-75-75h-362c-41.355469 0-75 33.644531-75 75v362c0 41.355469 33.644531 75 75 75zm-45-437c0-24.8125 20.1875-45 45-45h362c24.8125 0 45 20.1875 45 45v362c0 24.8125-20.1875 45-45 45h-105v-122h72.707031l20-120h-92.707031v-30h90v-120h-105c-57.898438 0-105 47.101562-105 105v45h-60v120h60v122h-137c-24.8125 0-45-20.1875-45-45zm0 0"/></svg></a>
+
+        <a class="contact__email" href="mailto:merak.manko@gmail.com"><svg width="34" height="34" xmlns="http://www.w3.org/2000/svg" id="Capa_1" enable-background="new 0 0 512 512" height="512" viewBox="0 0 512 512" width="512"><path d="m0 60.048v391.904h512v-391.904zm325.019 165.768c-38.058 38.057-99.98 38.057-138.038 0l-135.768-135.768h409.574zm-168.772 11.692-126.247 156.879v-283.126zm22.017 20.492c22.828 17.561 50.281 26.344 77.736 26.344s54.908-8.784 77.736-26.344l131.939 163.952h-419.35zm177.489-20.492 126.247-126.247v283.126z"/></svg>
+
+        
+    </div>
+  </section>
+  <footer class="footer">
+      <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"         title="Flaticon">www.flaticon.com</a></div>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+
 </html>
