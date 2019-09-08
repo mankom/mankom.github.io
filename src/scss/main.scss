@@ -10,12 +10,14 @@
 body {
   background: $gainsboro;
   color: $yankees-blue;//$aurometalsaurus;
+  font-family: 'Poppins', sans-serif;
   margin: 6em;
 }
 
 .me{
   line-height: 2.8rem;
-  width: 40em;
+  margin-bottom: 10em;
+  width: 50vw;
   &__email &__link{
     border-bottom: .1em solid $dodger-blue;
     color: $dodger-blue;
@@ -30,9 +32,8 @@ body {
   &__text{
     font-size: 1rem;
     line-height: 1.8rem;
-    width: 66%;
+    width: 63%;
   }
-  
 }
 
 .my-projects{
