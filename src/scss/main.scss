@@ -8,15 +8,38 @@
 }
 
 body {
-  color: $aurometalsaurus;
   background: $gainsboro;
+  color: $yankees-blue;//$aurometalsaurus;
+  margin: 6em;
+}
+
+.me{
+  line-height: 2.8rem;
+  width: 40em;
+  &__email &__link{
+    border-bottom: .1em solid $dodger-blue;
+    color: $dodger-blue;
+    padding-bottom: .4em;
+    text-decoration: none;
+    
+  }
+  &__link{
+    color: $dodger-blue;
+    font-style: normal;
+  }
+  &__text{
+    font-size: 1rem;
+    line-height: 1.8rem;
+    width: 66%;
+  }
+  
 }
 
 .my-projects{
   &__item{
-    background: $aurometalsaurus;
+    background: $yankees-blue;//$aurometalsaurus;
     border-radius: .5em;
-    box-shadow: 0.15em 0.15em rgba($color: #000000, $alpha: .7);
+    box-shadow: 0.18em 0.18em rgba($color: #000000, $alpha: .6);
     
     display: block;
     color: $ash-grey;
@@ -24,7 +47,8 @@ body {
     
   }
   &__link{
-    color: $lavender-gray;
+    color: $dodger-blue;//$lavender-gray;
+    font-style: normal;
     text-decoration: none;
   }
   &__list{
@@ -35,5 +59,4 @@ body {
     margin: 0;
     padding: 0 0.5em;
   }
-  
 }
