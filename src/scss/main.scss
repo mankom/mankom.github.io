@@ -8,25 +8,35 @@
 }
 
 body {
-  background: $gainsboro;
-  color: $yankees-blue;//$aurometalsaurus;
+  background: $gray;
+  border: .6em solid $border;
+  color: $black;
   font-family: 'Poppins', sans-serif;
-  margin: 6em;
+  //margin: 6em;
 }
 
+.contact{
+  background: $border;
+}
+
+.footer{
+  background: $border;
+}
 .me{
   line-height: 2.8rem;
+  margin-left: 6em;
+  margin-right: 6em;
   margin-bottom: 10em;
   width: 50vw;
   &__email &__link{
-    border-bottom: .1em solid $dodger-blue;
-    color: $dodger-blue;
+    border-bottom: .1em solid $blue;
+    color: $blue;
     padding-bottom: .4em;
     text-decoration: none;
     
   }
   &__link{
-    color: $dodger-blue;
+    color: $blue;
     font-style: normal;
   }
   &__text{
@@ -37,19 +47,20 @@ body {
 }
 
 .my-projects{
+  padding-left: 6em;
+  padding-right: 6em;
+  background: $yellow;
   &__item{
-    background: $yankees-blue;//$aurometalsaurus;
+    background: $gray;
     border-radius: .5em;
     box-shadow: 0.18em 0.18em rgba($color: #000000, $alpha: .6);
-    
     display: block;
-    color: $ash-grey;
     padding: .5em;
-    
   }
   &__link{
-    color: $dodger-blue;//$lavender-gray;
+    color: $black;
     font-style: normal;
+    font-weight: bold;
     text-decoration: none;
   }
   &__list{
@@ -58,6 +69,45 @@ body {
     grid-gap: .5em;
     list-style-type: none;
     margin: 0;
-    padding: 0 0.5em;
+    padding: 0;
+  }
+  &__title{
+    border-bottom: .1em solid $border;
+  }
+}
+
+.my-skills{
+
+  padding-left: 6em;
+  padding-right: 6em;
+  &__title{
+    border-bottom: .1em solid $yellow;
+  } 
+}
+
+.skill-list{
+  display: flex;
+  flex-flow: row wrap; 
+  grid-template-columns: 1fr 1fr;
+  &__item{
+    flex: 1 1 auto;
+    min-width: 11em;
+    width: 50%;
+  }
+  &__items{
+    display: flex;
+    flex: 1 6 auto;
+    grid-template-columns: 1fr 1fr;
+    list-style: none;
+    //margin-left: .4em;
+    padding: 0;
+    width: 50%;
+    //flex-direction: row;
+    flex-wrap: wrap;
+  }
+  &__title{
+    flex: 1 1 auto;
+    min-width: 12em;
+    width: 50%;
   }
 }
