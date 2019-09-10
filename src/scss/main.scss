@@ -8,19 +8,18 @@
 
 body {
   background: $gray;
-  border: 0.4em solid $border;
+  border: 0.5vw solid $border;
   color: $black;
   display: grid;
   font-family: "Poppins", sans-serif;
   grid-template-columns: 1fr 8fr 1fr;
-  max-width: 1440px;
+  max-width: 72em;
   min-width: 29.2em;
   margin: 0 auto;
-  &>section{
+  & > section {
     grid-column: 2;
     min-width: 29.2em;
   }
-
 }
 
 .contact {
@@ -28,13 +27,13 @@ body {
   padding: 5em 0;
 }
 
-.contact-empty-left{
+.contact-empty-left {
   grid-column: 1;
   background: $border;
   width: auto;
 }
 
-.contact-empty-right{
+.contact-empty-right {
   grid-column: 3;
   background: $border;
   width: auto;
@@ -43,10 +42,10 @@ body {
 
 .footer {
   background: $border;
-  font-size: .5rem;
+  font-size: 0.5rem;
   grid-column: 1 / span 3;
   text-align: right;
-  & div a{
+  & div a {
     color: $blue;
   }
 }
@@ -80,6 +79,10 @@ body {
     box-shadow: 0.18em 0.18em rgba($color: #000000, $alpha: 0.6);
     display: block;
     padding: 0.5em;
+    margin: .5em;
+    min-width: 45.5%;
+    max-width: 100%;
+    
   }
   &__link {
     color: $black;
@@ -88,9 +91,12 @@ body {
     text-decoration: none;
   }
   &__list {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 0.5em;
+    align-content: space-between;
+    align-items: stretch;
+    justify-items: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -98,16 +104,16 @@ body {
   &__title {
     border-bottom: 0.07em solid $border;
     margin: 0;
-    padding-bottom: .53em;
+    padding-bottom: 0.53em;
   }
 }
 
-.my-projects-empty-left{
+.my-projects-empty-left {
   grid-column: 1;
   background: $yellow;
   width: auto;
 }
-.my-projects-empty-right{
+.my-projects-empty-right {
   grid-column: 3;
   background: $yellow;
   width: auto;
@@ -132,11 +138,11 @@ body {
   &__item {
     flex: 1 1 auto;
     line-height: 2em;
-    margin-top: .17em;
+    margin-top: 0.17em;
     max-width: 50%;
     min-width: 12em;
     //width: auto;
-    &::before{
+    &::before {
       color: $yellow;
       content: "• ";
     }
@@ -157,9 +163,6 @@ body {
   &__title {
     flex: 1 1 auto;
     line-height: 2rem;
-    //margin-block-start: 1rem;
     min-width: 12em;
-    //width: 50%;
   }
 }
-
