@@ -89,7 +89,7 @@ body {
     flex-flow: column nowrap;
     justify-content: space-between;
     //margin: .5em;
-    min-width: 43%;
+    min-width: 12em;
     //max-width: 43%;
     padding: 1em;
   }
@@ -101,12 +101,11 @@ body {
     text-decoration: none;
   }
   &__list {
-    align-content: space-between;
-    align-items: stretch;
-    justify-items: center;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-between;
+    display: grid;
+    grid-gap: .5em;
+    grid-auto-columns: min-content;
+    grid-auto-rows: min-content;
+    grid-auto-flow: row;
     list-style-type: none;
     margin: 0;
     padding: 0;
