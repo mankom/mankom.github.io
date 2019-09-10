@@ -8,27 +8,52 @@
 
 body {
   background: $gray;
-  border: 0.6em solid $border;
+  border: 0.4em solid $border;
   color: $black;
+  display: grid;
   font-family: "Poppins", sans-serif;
+  grid-template-columns: 1fr 8fr 1fr;
   max-width: 1440px;
+  min-width: 29.2em;
   margin: 0 auto;
+  &>section{
+    grid-column: 2;
+    min-width: 29.2em;
+  }
+
 }
 
 .contact {
   background: $border;
-  padding: 5em 6em;
+  padding: 5em 0;
+}
+
+.contact-empty-left{
+  grid-column: 1;
+  background: $border;
+  width: auto;
+}
+
+.contact-empty-right{
+  grid-column: 3;
+  background: $border;
+  width: auto;
+  z-index: -1;
 }
 
 .footer {
   background: $border;
+  font-size: .5rem;
+  grid-column: 1 / span 3;
+  text-align: right;
+  & div a{
+    color: $blue;
+  }
 }
 .me {
   line-height: 2.8rem;
-  margin-left: 6em;
-  margin-right: 6em;
   margin-bottom: 10em;
-  width: 50vw;
+  //width: 50vw;
   &__email &__link {
     border-bottom: 0.1em solid $blue;
     color: $blue;
@@ -47,10 +72,8 @@ body {
 }
 
 .my-projects {
-  //padding-left: 6em;
-  //padding-right: 6em;
   background: $yellow;
-  padding: 5em 6em;
+  padding: 5em 0;
   &__item {
     background: $gray;
     border-radius: 0.5em;
@@ -79,10 +102,20 @@ body {
   }
 }
 
+.my-projects-empty-left{
+  grid-column: 1;
+  background: $yellow;
+  width: auto;
+}
+.my-projects-empty-right{
+  grid-column: 3;
+  background: $yellow;
+  width: auto;
+  z-index: -1;
+}
+
 .my-skills {
   margin-bottom: 5em;
-  padding-left: 6em;
-  padding-right: 6em;
   &__title {
     border-bottom: 0.07em solid $yellow;
     margin: 0;
@@ -91,44 +124,42 @@ body {
 }
 
 .skill-list {
+  align-items: flex-start;
+  align-content: space-between;
   display: flex;
   flex-flow: row wrap;
-  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
   &__item {
     flex: 1 1 auto;
-    //height: 2.22em;
     line-height: 2em;
     margin-top: .17em;
-    min-width: 11em;
-    width: 50%;
-    //vertical-align: middle;
+    max-width: 50%;
+    min-width: 12em;
+    //width: auto;
     &::before{
       color: $yellow;
-      content: "•   ";//"{&#8226} " ;
+      content: "• ";
     }
   }
   &__items {
+    align-items: flex-start;
+    align-content: space-between;
     display: flex;
+    flex: 1 6 auto;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
-    align-content: space-between;
-
-    flex: 1 6 auto;
-
     list-style: none;
-    //margin-left: .4em;
+    max-width: 50%;
+    min-width: 20em;
     padding: 0;
-    width: 50%;
-    //flex-direction: row;
-    //flex-wrap: wrap;
   }
   &__title {
     flex: 1 1 auto;
     line-height: 2rem;
-    margin-block-start: 1rem;
+    //margin-block-start: 1rem;
     min-width: 12em;
-    width: 50%;
+    //width: 50%;
   }
 }
+
