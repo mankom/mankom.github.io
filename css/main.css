@@ -383,6 +383,8 @@ body {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -ms-flex-item-align: auto;
+        align-self: auto;
     background: #E5E8F1;
     border-radius: 0.5em;
     -webkit-box-shadow: 0.18em 0.18em rgba(0, 0, 0, 0.6);
@@ -390,13 +392,19 @@ body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-preferred-size: 20em;
+        flex-basis: 20em;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column nowrap;
             flex-flow: column nowrap;
+    -webkit-box-flex: inherit;
+        -ms-flex-positive: inherit;
+            flex-grow: inherit;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: .5em;
     min-width: 43%;
     padding: 1em; }
   .my-projects__link {
@@ -411,7 +419,7 @@ body {
     -webkit-box-align: stretch;
         -ms-flex-align: stretch;
             align-items: stretch;
-    justify-items: center;
+    justify-items: baseline;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
