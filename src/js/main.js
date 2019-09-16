@@ -1,12 +1,13 @@
 "use strict";
 
+//get i show proper repositories from github
+
 const list=document.querySelector(".my-projects__list--js");
 
 fetch('https://api.github.com/users/mankom/repos?sort=updated&direction=desc')
 .then(reps => reps.json())
 .then(reps => {
   const repos = reps;
-  console.log(repos);
   for(const repo of repos){
     const {homepage, description, html_url, name} = repo;
     if(homepage){
